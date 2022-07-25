@@ -4,7 +4,7 @@ const rotaProdutos = require('./routes/rotaProdutos');
 
 app.use(express.json());
 
-app.use('/produtos', rotaProdutos);
+app.use('/api/products', rotaProdutos);
 
 app.use('/*', (req, res, next) => {
     res.send('Erro 404: Página não encontrada!')
